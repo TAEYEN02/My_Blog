@@ -5,7 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const drawerWidth = 240;
 
-const MainLayout = ({ children , title}) => {
+const MainLayout = ({ children, title }) => {
   const [open, setOpen] = useState(true); // 사이드바 열림 상태
 
   const toggleDrawer = () => {
@@ -52,6 +52,8 @@ const MainLayout = ({ children , title}) => {
           mt: "64px", // AppBar 높이만큼 띄우기 (기본 MUI AppBar 높이)
           width: open ? `calc(100% - ${drawerWidth}px)` : "100%",
           transition: "all 0.3s",
+          height: "calc(100vh - 64px)", // 뷰포트 높이에서 AppBar 높이 뺌
+          overflow: "auto", // 필요하면 스크롤
         }}
       >
         {React.cloneElement(children, { sidebarOpen: open })}

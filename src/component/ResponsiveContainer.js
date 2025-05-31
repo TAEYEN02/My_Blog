@@ -6,18 +6,19 @@ const ResponsiveContainer = ({ sidebarOpen, children }) => {
   return (
     <Box
       sx={{
-       transition: "all 0.3s",
+        transition: "all 0.3s",
         width: "auto",
+        height: '100%',       
         bgcolor: "#fff",
         borderRadius: 2,
         p: 2,
-        ml: sidebarOpen ? `${drawerWidth}px` : 0, //margin-left
+        ml: sidebarOpen ? `${drawerWidth}px` : 0,
         mr: "auto",
-        justifyContent:'center',
-        alignItems:'center',
-        alignContent:'center',
-        display:"flex",
-        flexDirection:"column"
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       {children}
