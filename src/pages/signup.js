@@ -38,7 +38,8 @@ const SignUp = () => {
                             type="submit" 
                             variant="contained" 
                             fullWidth
-                             style={{ padding: "12px", fontSize: "18px" }}>
+                            style={{ padding: "12px", fontSize: "18px" 
+                            }}>
                             Submit
                         </Button>
 
