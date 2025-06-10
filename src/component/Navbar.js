@@ -1,4 +1,3 @@
-import React from "react";
 import {
     Box,
     List,
@@ -29,12 +28,11 @@ const Navbar = () => {
         { text: "전체 글", to: "/main", icon: <ArticleIcon /> },
         { text: "인기 글", to: "/popular", icon: <WhatshotIcon /> },
         { text: "내가 쓴 글", to: "/myposts", icon: <PersonIcon /> },
-        { text: "스크랩한 글", to: "/bookmarks", icon: <BookmarkIcon /> },
         { text: "✍ 글쓰기", to: "/write", icon: <CreateIcon /> },
     ];
 
     const bottomItems = [
-        { text: "프로필 관리", to: "/mypage", icon: <SettingsIcon /> },
+        { text: "프로필 관리", to: "/profile", icon: <SettingsIcon /> },
         { text: "로그아웃", to: "/", icon: <LogoutIcon /> },
     ];
 

@@ -7,6 +7,8 @@ import { AuthProvider } from "./context/AuthContext";
 import MainPage from './pages/mainpage';
 import Myposts from './pages/Myposts';
 import Write from './pages/Write';
+import Profile from './pages/profile';
+import PopularPage from './pages/popularPage';
 function App() {
   return (
     <AuthProvider>
@@ -18,6 +20,8 @@ function App() {
           <Route path="/main" element={<MainPage/>}/>
           <Route path='/myposts' element={<Myposts/>}/>
           <Route path='/write' element={<Write/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/popular' element={<PopularPage/>}/>
         </Routes>
       </BrowserRouter>
     </AuthProvider>
