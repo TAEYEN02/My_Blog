@@ -25,10 +25,11 @@ const Navbar = () => {
     const location = useLocation();
 
     const menuItems = [
-        { text: "전체 글", to: "/main", icon: <ArticleIcon /> },
+        { text: "전체 글", to: "/allPage", icon: <ArticleIcon /> },
         { text: "인기 글", to: "/popular", icon: <WhatshotIcon /> },
         { text: "내가 쓴 글", to: "/myposts", icon: <PersonIcon /> },
-        { text: "✍ 글쓰기", to: "/write", icon: <CreateIcon /> },
+        { text: "글쓰기", to: "/write", icon: <CreateIcon /> },
+        { text: "My Page", to:"/myPage", icon:<BookmarkIcon/>}
     ];
 
     const bottomItems = [

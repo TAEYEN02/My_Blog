@@ -9,6 +9,7 @@ import Myposts from './pages/Myposts';
 import Write from './pages/Write';
 import Profile from './pages/profile';
 import PopularPage from './pages/popularPage';
+import AllPage from './pages/AllPage';
 function App() {
   return (
     <AuthProvider>
@@ -17,11 +18,12 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgot" element={<Forgot />} />
-          <Route path="/main" element={<MainPage/>}/>
+          <Route path="/mypage" element={<MainPage/>}/>
           <Route path='/myposts' element={<Myposts/>}/>
           <Route path='/write' element={<Write/>}/>
           <Route path='/profile' element={<Profile/>}/>
           <Route path='/popular' element={<PopularPage/>}/>
+          <Route path='/allPage' element={<AllPage/>}/>
         </Routes>
       </BrowserRouter>
     </AuthProvider>

@@ -1,4 +1,3 @@
-import React from "react";
 import MainLayout from "../layout/MainLayout";
 import ResponsiveContainer from "../component/ResponsiveContainer";
 
@@ -28,9 +27,12 @@ const MainPage = ({ sidebarOpen }) => {
             }}
           >
             <h3>TODO</h3>
+            {/* 백엔드로 날짜마다 todoList 설정할 수 있고 이게 하단의 달력과 연결되어있어서 날짜에 맞는
+            todoList가 되어있어야함 */}
+            {/* 삭제, 추가, 체크할 수 있는 체크박스 */}
           </div>
 
-          {/* 가운데 내가 쓴 글 */}
+          {/* 전체 글 */}
           <div
             style={{
               flex: 2,
@@ -39,7 +41,8 @@ const MainPage = ({ sidebarOpen }) => {
               padding: 16,
             }}
           >
-            <h3>내가 쓴 글</h3>
+            <h3>전체 글</h3>
+            {/* 카드 형식으로 넘겨볼 수 있는 전체 글 */}
           </div>
 
           {/* 오른쪽 스크랩 + 달력 */}
@@ -55,6 +58,9 @@ const MainPage = ({ sidebarOpen }) => {
           >
             <div style={{ flex: 1, border: "1px solid #ccc", padding: 16, minWidth: 0 }}>
               <h3>스크랩한 글</h3>
+              {/* 좋아요 한 글을 카드형식으로 (오른쪽 왼쪽으로 볼 수 있는거 ) => 이것도 백엔드로 내가 좋아요 한 파일들을
+              저장해서 보여주는거 => 보여주는 내용은 간단한 내용이고 그 카드를 누르면 상세보기로 이제 다른 스크린으로 넘어가는게 아니라 팝업창으로
+              보여줄 수 있는거 (아닌가 이게 다른 화면으로 넘어가는게 좋을려나) */}
             </div>
             <div
               style={{
@@ -68,6 +74,8 @@ const MainPage = ({ sidebarOpen }) => {
               }}
             >
               <h3 style={{ textAlign: "center" }}>달력</h3>
+              {/* Todo랑 연동되어 이게 날짜를 눌렀을때 Todo칸에 그 날짜의 list 화면들을 보여줄 수 있고, 
+              Todo가 되어있는 날엔 표시가 뜰 수 있게, 그리고 내가 기념일같은것도 간단하게 넣을 수 있도록 할 수 있음 좋겠다. */}
             </div>
           </div>
         </div>
